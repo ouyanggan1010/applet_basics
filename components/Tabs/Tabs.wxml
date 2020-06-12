@@ -1,0 +1,28 @@
+<view>{{test}}</view>
+<view class="tabs">
+    <view class="tabs_title">
+        <!-- 第一种点击事件的方法 -->
+        <!-- <view class="tabs_item {{isActive === i?'active':''}}" wx:for="{{tabs}}" wx:for-item="tab" wx:for-index="i" wx:key="id" bindtap="hanldeItemTap" data-index="{{i}}">
+            {{tab.name}}
+        </view> -->
+        <!-- 第二种点击事件的方法 -->
+        <view class="tabs_item {{tab.isActive?'active':''}}" wx:for="{{tabs}}" wx:for-item="tab" wx:for-index="i" wx:key="id" bindtap="hanldeItemTap" data-index="{{i}}">
+            {{tab.name}}
+        </view>
+    </view>
+    <slot name="top"></slot>
+    <view class="tabs_content">
+        <!-- slot标签其实是一个占位符或插槽
+            等父组件使用子组件时，会传递标签给子组件
+            最终这些标签会替换子组件的slot插槽的位置
+            1.默认插槽
+              单独写一个slot是一个，所有在子组件中写的标签都会默认替换该slot标签
+            2.多个插槽
+              1.首先在js文件中options中声明启用：multipleSlots:true
+              2.在子组件中用name属性来区分不同的插槽
+                <slot name="slotOne"></slot>
+              3.父组件中使用时通过slot属性来区分是哪个插槽
+                <view slot="slotOne"></view> -->
+        <slot name="content"></slot>
+    </view>
+</view>

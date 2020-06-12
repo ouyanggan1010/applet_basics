@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/demo12/demo12",
+    "pages/demo11/demo11",
+    "pages/demo10/demo10",
+    "pages/demo09/demo09",
+    "pages/demo08/demo08",
+    "pages/demo07/demo07",
+    "pages/demo06/demo06",
+    "pages/demo05/demo05",
+    "pages/demo04/demo04",
+    "pages/demo03/demo03",
+    "pages/index/index",
+    "pages/img/img",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/logs/logs",
+    "pages/demo01/demo01"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "yellow",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color":"#000000",
+    "selectedColor":"#d81e06",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icon/_shouye.png",
+      "selectedIconPath": "icon/shouye.png"
+    },{
+      "pagePath": "pages/img/img",
+      "text": "图片",
+      "iconPath": "icon/_tupian.png",
+      "selectedIconPath": "icon/tupian.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "个人中心",
+      "iconPath": "icon/_wode.png",
+      "selectedIconPath": "icon/wode.png"
+    },{
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "icon/_sousuo.png",
+      "selectedIconPath": "icon/sousuo.png"
+    },{
+      "pagePath": "pages/demo12/demo12",
+      "text": "搜索",
+      "iconPath": "icon/_sousuo.png",
+      "selectedIconPath": "icon/sousuo.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

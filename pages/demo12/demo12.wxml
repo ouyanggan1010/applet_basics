@@ -1,0 +1,15 @@
+<!--pages/demo12/demo12.wxml-->
+<text>pages/demo12/demo12.wxml</text>
+<navigator open-type="navigate" url="/pages/demo11/demo11">跳转页面onHide</navigator>
+<navigator open-type="redirect" url="/pages/demo11/demo11">跳转页面onUnload</navigator>
+<view>111111111</view>
+<view>111111111</view>
+<view>111111111</view>
+<view>111111111</view>
+<view>111111111</view>
+<view>111111111</view>
+<view>111111111</view>
+<view>111111111</view>
+<view>111111111</view>
+<view>111111111</view>
+<view>222222222</view>

@@ -1,0 +1,29 @@
+<!-- 1 给input标签绑定input事件
+       绑定关键字 bindinput 监听的是input的输入事件
+                  bindfocus 输入框聚焦时触发
+                  bindblur  输入框失去焦点时触发
+                  bindconfirm  点击完成按钮时触发
+                  bindkeyboardheightchange  键盘高度发生变化的时候触发此事件
+     2 如何获取输入框的值
+       通过事件源对象来获取
+       e.detail.value 
+     3 把输入框的值赋值到data当中
+       错误的写法：
+           1 this.data.num = e.detail.value
+           2 this.num = e.detail.value
+       正确的写法：
+           this.setData({
+              num: e.detail.value
+           }) 
+     4 需要加入点击事件
+        1 事件名：bindtap
+        2 无法在小程序中的事件中直接传参
+        3 通过自定义属性的方式来传递参数
+        4 事件源中获取自定义属性  data-operation 
+         在事件中通过e.target.dataset.operation-->
+<view>
+   <input type="text" style="border:1px red solid" bindinput="handleInput" value="{{num}}" />
+   <button bindtap="handletap" data-operation="{{1}}">+</button>
+   <button bindtap="handletap" data-operation="{{-1}}">-</button>
+   <view>{{num}}</view>
+</view>

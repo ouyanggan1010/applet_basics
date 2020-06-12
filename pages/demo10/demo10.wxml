@@ -1,0 +1,23 @@
+<!-- pages/demo10/demo10.wxml -->
+<icon type="success" size="{{aize}}" />
+<!-- radio 单选框 -->
+<!-- 1 radio标签必须要和父元素radio-group一起使用
+    2 value 选中单选框的值
+    3 需要给radio-group绑定change事件  bindchange -->
+<radio-group bindchange="changeBall">
+    <radio wx:for="{{radioArry}}" wx:for-item="item" wx:for-index="i" wx:key="id" value="{{item.id}}" color="#ffc107" checked="{{i === 0}}">
+        {{item.val}}
+    </radio>
+</radio-group>
+<view>您选中的是：{{gender}}</view>
+
+
+<!-- 复选框checkbox  e.detail.value是一个数组 
+          checkbox必须包裹在checkbox-group中 -->
+<checkbox-group bindchange="changeBall2">
+    <label wx:for="{{checkArry}}" wx:for-item="item" wx:key="id">
+        <checkbox value="{{item.id}}" />
+        {{item.val}}
+    </label>
+</checkbox-group>
+<view>您选中的是：{{arryBalls}}</view>

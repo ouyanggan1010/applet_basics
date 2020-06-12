@@ -1,0 +1,6 @@
+/* pages/demo12/demo12.wxss */
+view{
+    line-height: 60px;
+    background: red;
+    margin-top: 20px;
+}

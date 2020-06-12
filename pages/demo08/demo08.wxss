@@ -1,0 +1,6 @@
+/* pages/demo08/demo08.wxss */
+swiper{
+    width: 100%;
+    height: calc((750rpx * 270) / 640);
+    background: red;
+}

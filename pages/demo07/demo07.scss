@@ -1,0 +1,16 @@
+@import "../../style/rest.scss";
+
+.viewAll{
+    color: $colorred;
+    .viewOne{
+        font-size: 18px;
+        color: rgb(66, 73, 173);
+    }
+    >view:nth-child(2){
+        color: gray;
+    }
+}
+.my_div{
+    background: chartreuse;
+    font-size: 20px;
+}

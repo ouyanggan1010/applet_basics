@@ -1,0 +1,15 @@
+<!-- 1.父组件向子组件传递数据，通过标签属性的方式来传递
+      1.在子组件进行接收
+      2.子组件直接当成data数据使用即可
+    2.字向父传递数据，通过事件的方式传递
+      1.在子组件的标签上加入一个自定义事件
+      2.通过“bidn+自定义事件名”来绑定事件 -->
+<Tabs tabs="{{tabs}}" test="测试数据" binditemChange="handleitemChange">
+    <view slot="top">44444</view>
+    <view slot="content">
+        <block wx:if="{{tabs[0].isActive}}">首页数据</block>
+        <block wx:elif="{{tabs[1].isActive}}">原创数据</block>
+        <block wx:elif="{{tabs[2].isActive}}">分类数据</block>
+        <block wx:else="{{tabs[3].isActive}}">关于数据</block>
+    </view>
+</Tabs>

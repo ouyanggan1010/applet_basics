@@ -1,0 +1,14 @@
+<!-- pages/demo07/demo07.wxml -->
+<text>pages/demo07/demo07.wxml</text>
+<view class="viewAll">
+    <view class="viewOne">dsfvdsf</view>
+    <view>dsfvdsf</view>
+    <navigator open-type="navigateBack">navigateBack</navigator>
+</view>
+<view>-------------------------</view>
+<!-- rich-text 富文本标签 -->
+<!-- 1 nodes属性来实现
+      1 接收标签字符串
+      2 接收对象数组 -->
+<rich-text nodes="{{html}}"></rich-text>
+<rich-text nodes="{{nodes}}"></rich-text>
